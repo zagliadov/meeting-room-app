@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .input-placeholder-xl::placeholder {
+    font-size: 22px;
+  }
+  .input-text-xlf {
+    font-size: 22px;
+  }
+  .layout-bg {
+    background-image: url("components/Icons/Layout/layout.svg");
+    background-position: center center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+  .chevron-up {
+    background-image: url("components/Icons/ChevronUp/chevronUp.svg");
+    background-position: center center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+  .slider-thumb::-webkit-slider-thumb {
+    @apply appearance-none w-[6px] z-20 relative h-5 rounded-xl bg-slate-300 cursor-pointer;
+  }
+}
